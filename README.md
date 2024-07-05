@@ -41,7 +41,7 @@ To get started with the project, follow these steps:
    git clone https://github.com/Amanthakeshan2000/Inventory_Management_System.git
    ```
    ```
-   cd nsbm-inventory-management
+   cd Inventory_Management_System
   ```
 02. Setup Environment:
 
