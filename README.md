@@ -56,10 +56,10 @@ To get started with the project, follow these steps:
    ./mvnw spring-boot:run
   ```
 04. Run Frontend:
-```
+  ```
    cd frontend
-```
-```   
+  ```
+  ```   
    npm install
   ```
   ```
