@@ -37,24 +37,34 @@ The project is divided into six microservices:
 To get started with the project, follow these steps:
 
 01. Clone the Repository:
-  - git clone https://github.com/your-username/nsbm-inventory-management.git
-  - cd nsbm-inventory-management
-
+   ```
+   git clone https://github.com/Amanthakeshan2000/Inventory_Management_System.git
+   ```
+   ```
+   cd Inventory_Management_System
+  ```
 02. Setup Environment:
 
   - Ensure you have Java, Node.js, and SQL Server installed.
   - Create a .env file for environment variables.
 
 03. Run Backend Services:
-  - cd backend
-  - ./mvnw spring-boot:run
-
+  ```
+   cd backend
+   ```
+  ```
+   ./mvnw spring-boot:run
+  ```
 04. Run Frontend:
-
-  - cd frontend
-  - npm install
-  - npm start
-
+```
+   cd frontend
+```
+```   
+   npm install
+  ```
+  ```
+   npm start
+  ```
 # New Features of Product Version 1.0.1
 We are constantly working on improving the system. Here are some new features we plan to implement:
 
