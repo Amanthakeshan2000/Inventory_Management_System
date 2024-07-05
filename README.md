@@ -83,6 +83,9 @@ We welcome contributions from the community! To contribute, follow these steps:
   - Push to the branch (git push origin feature-branch).
   - Open a Pull Request.
 
+# Diagram
+![NSBM Inventory Management System](https://github.com/Amanthakeshan2000/Inventory_Management_System/assets/97352321/079f8000-2203-4ff4-ba0d-511d61590fd0)
+
 # Contact
 
   - For any questions or support, please contact us at support@nsbm-university.com.
