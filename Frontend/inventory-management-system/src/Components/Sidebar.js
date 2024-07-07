@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaBars, FaClipboardList, FaCalendarAlt, FaUsers, FaBuilding, FaUser } from 'react-icons/fa';
+import { FaBars, FaClipboardList, FaCalendarAlt, FaUsers, FaBuilding, FaUser, FaUndo } from 'react-icons/fa';
 import '../Css/Sidebar.css';
 import logo from '../Assets/Logo.png';
 
@@ -43,6 +43,10 @@ const Sidebar = () => {
           <div className={`submenu ${isRequestOpen ? 'open' : ''}`}>
             <span>Create Request</span>
             <span>Request History</span>
+          </div>
+          <div className="menuItem">
+            <FaUndo className="icon" />
+            <span>Return</span>
           </div>
           <div className="menuItem" onClick={toggleEventsMenu}>
             <FaCalendarAlt className="icon" />
