@@ -16,8 +16,9 @@
     align-items: center;
     margin-right: 10px;
     padding: 10px 15px;
-    background-color: #007bff;
-    color: #ffffff;
+    background-color: #1c85e720;
+    
+    color: #1C86E7;
     border-radius: 8px;
   }
   
@@ -26,12 +27,12 @@
     border: none;
     background: none;
     cursor: pointer;
-    color: #ffffff;
+    color: #1c85e7;
     font-weight: bold;
   }
   
   .selected-item button:hover {
-    color: #110064;
+    color: #ff0000;
     
   }
   
@@ -62,9 +63,9 @@
   }
   
   select option:checked {
-    background-color: #06003b;
-    border-color: #ebebeb;
+    background-color: #1c85e73f;
+    border-color: #1c85e717;
     border-radius: 8px;
-    color: #f9f9f9;
+    color: #1C86E7;
   }
   
