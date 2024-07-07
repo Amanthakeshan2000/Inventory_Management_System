@@ -1,60 +1,46 @@
 /* Sidebar.css */
 .sidebar {
-    width: 250px;
-    height: 100vh;
-    background-color: #fff;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .logo img {
-    margin: 20px 0;
-    width: 200px;
-    height: auto;
-  }
-  
-  .menu {
-    width: 100%;
-  }
-  
-  .menuItem {
-    width: 100%;
-    padding: 15px 20px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .menuItem:hover {
-    background-color: #f0f0f0;
-  }
-  
-  .menuItem .icon {
-    margin-right: 10px;
-  }
-  
-  .submenu {
-    padding-left: 30px;
-    display: flex;
-    flex-direction: column;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-  }
-  
-  .submenu.open {
-    max-height: 200px; /* Adjust based on the content */
-  }
-  
-  .submenu span {
-    margin: 5px 0;
-    cursor: pointer;
-  }
-  
-  .submenu span:hover {
-    text-decoration: underline;
-  }
-  
+  width: 250px;
+  height: 100vh;
+  background-color: #ffffff;
+  position: fixed;
+  top: 10px;
+  left: 0;
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1); /* Add shadow to the sidebar */
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar .logo {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar .menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar .menuItem {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #000000;
+}
+
+.sidebar .submenu {
+  display: none;
+  flex-direction: column;
+  padding-left: 30px;
+}
+
+.sidebar .submenu.open {
+  display: flex;
+}
+
+.sidebar .menuItem .icon {
+  margin-right: 10px;
+}

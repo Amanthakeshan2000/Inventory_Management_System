@@ -1,0 +1,38 @@
+/* App.css */
+.App {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px; 
+    height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    flex: 1;
+    max-width: 1630px;
+    margin-left: 13%;
+    width: auto; 
+  }
+  
+  .main-content {
+    width: calc(100% - 310px);
+    position: fixed;
+    top: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+    left: 260px; 
+    background-color: #fff;
+    height: auto;
+    padding: 0 20px;
+    display: flex;
+  }
+  
+  
+  .content {
+    padding: 20px;
+    
+  }
+  
+  
