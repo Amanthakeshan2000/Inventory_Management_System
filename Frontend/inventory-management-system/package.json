@@ -10,9 +10,13 @@
     "datatables.net-dt": "^2.0.8",
     "feather-icons": "^4.29.2",
     "react": "^18.3.1",
+    "react-bootstrap": "^2.10.4",
+    "react-datepicker": "^7.2.0",
     "react-dom": "^18.3.1",
     "react-icons": "^5.2.1",
     "react-scripts": "5.0.1",
+    "react-time-picker": "^7.0.0",
+    "styled-components": "^6.1.11",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

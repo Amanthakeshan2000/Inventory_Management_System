@@ -4,6 +4,7 @@
     justify-content: center;
     margin-top: 90px; 
     height: 100vh;
+    
   }
   
   .container {
@@ -12,10 +13,11 @@
     max-width: 1630px;
     margin-left: 13%;
     width: auto; 
+    
   }
   
   .main-content {
-    width: calc(100% - 310px);
+    width: calc(100% - 275px);
     position: fixed;
     top: 90px;
     display: flex;
@@ -26,14 +28,14 @@
     background-color: #fff;
     height: auto;
     padding: 0 20px;
-    display: flex;
+
   }
   
   
   .content {
     padding: 20px;
-
-    
+    width: 100%;
+   
   }
   
   

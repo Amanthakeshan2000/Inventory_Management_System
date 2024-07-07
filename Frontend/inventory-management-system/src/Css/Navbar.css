@@ -1,6 +1,6 @@
 /* Navbar.css */
 .navbar {
-    width: calc(100% - 310px);
+    width: calc(100% - 275px);
     position: fixed;
     top: 10px;
     display: flex;

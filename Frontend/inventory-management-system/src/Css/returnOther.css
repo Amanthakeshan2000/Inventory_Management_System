@@ -1,0 +1,70 @@
+.item-selector {
+    margin-bottom: 20px;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .selected-items {
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  
+  .selected-item {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 8px;
+  }
+  
+  .selected-item button {
+    margin-left: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .selected-item button:hover {
+    color: #110064;
+    
+  }
+  
+  select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: border-color 0.3s ease; 
+    border-color: #ebebeb;
+    height: 250px;
+    color: #4B465C;
+  }
+  
+  select:focus {
+    border-color: #ffffff;
+    outline: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  select option {
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  select option:checked {
+    background-color: #06003b;
+    border-color: #ebebeb;
+    border-radius: 8px;
+    color: #f9f9f9;
+  }
+  
