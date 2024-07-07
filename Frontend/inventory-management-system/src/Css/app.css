@@ -2,6 +2,7 @@
 .App {
   display: flex;
   height: 100vh;
+
 }
 
 .sidebar {
@@ -12,6 +13,8 @@
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+
+
 }
 
 .navbar {
@@ -26,4 +29,6 @@
   margin-top: 60px;
   flex-grow: 1;
   padding: 20px;
+  
+
 }

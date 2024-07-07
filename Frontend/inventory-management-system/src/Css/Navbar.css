@@ -12,6 +12,7 @@
     height: 60px;
     padding: 0 20px;
     display: flex;
+    border-radius: 10px;
   }
   
   .navbar-left {
