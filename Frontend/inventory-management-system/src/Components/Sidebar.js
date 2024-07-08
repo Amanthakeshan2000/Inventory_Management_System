@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FaBars, FaClipboardList, FaCalendarAlt, FaUsers, FaBuilding, FaUser, FaUndo } from 'react-icons/fa';
 import '../Css/Sidebar.css';
 import logo from '../Assets/Logo.png';
+import '../Css/bootstrap.css';
 
 const Sidebar = () => {
   const [isRequestOpen, setIsRequestOpen] = useState(false);
@@ -24,9 +25,9 @@ const Sidebar = () => {
 
   return (
     <div>
-      <div className="menuIcon" onClick={toggleSidebar}>
+      {/* <div className="menuIcon" onClick={toggleSidebar}>
         <FaBars />
-      </div>
+      </div> */}
       <div className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
         <div className="logo">
           <img src={logo} alt="NSBM Inventory Management System" />

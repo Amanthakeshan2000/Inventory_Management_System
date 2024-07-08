@@ -2,7 +2,9 @@
 import React from 'react';
 import Sidebar from './Components/Sidebar';
 import Navbar from './Components/Navbar';
+import ReturnForm from './Pages/returnForm';
 import './App.css';
+
 
 const App = () => {
   return (
@@ -13,7 +15,7 @@ const App = () => {
           <Navbar />
           <div className="content">
         
-              <h1>Your Page Here</h1>
+            <ReturnForm />
             
           </div>
         </div>

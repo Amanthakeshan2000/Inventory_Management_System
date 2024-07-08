@@ -1,0 +1,51 @@
+.custom-time-picker {
+    position: relative;
+  }
+  
+  .custom-time-picker input {
+    cursor: pointer;
+    width: 100%; 
+  }
+  
+  .time-picker-dropdown {
+    position: absolute;
+    background-color: #add8e672;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px;
+    top: calc(100% + 10px); 
+    left: 0;
+    width: 150px; 
+    display: flex; 
+    flex-wrap: wrap; 
+  }
+  
+  .hour-input,
+  .minute-input {
+    flex: 1 1 50%;
+    margin-bottom: 10px;
+  }
+  
+  .hour-input label,
+  .minute-input label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .hour-input input,
+  .minute-input input {
+    width: calc(100% - 10px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .hour-input input:focus,
+  .minute-input input:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  

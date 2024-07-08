@@ -1,0 +1,71 @@
+.item-selector {
+    margin-bottom: 20px;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .selected-items {
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  
+  .selected-item {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    padding: 10px 15px;
+    background-color: #1c85e720;
+    
+    color: #1C86E7;
+    border-radius: 8px;
+  }
+  
+  .selected-item button {
+    margin-left: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #1c85e7;
+    font-weight: bold;
+  }
+  
+  .selected-item button:hover {
+    color: #ff0000;
+    
+  }
+  
+  select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: border-color 0.3s ease; 
+    border-color: #ebebeb;
+    height: 250px;
+    color: #4B465C;
+  }
+  
+  select:focus {
+    border-color: #ffffff;
+    outline: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  select option {
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  select option:checked {
+    background-color: #1c85e73f;
+    border-color: #1c85e717;
+    border-radius: 8px;
+    color: #1C86E7;
+  }
+  
