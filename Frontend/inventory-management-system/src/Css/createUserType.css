@@ -1,0 +1,17 @@
+.select-userType-page{
+    display: flex;
+    height: 100vh;
+ 
+}
+
+.egBgImage{
+    background-size: cover;
+    height: 1000px;
+    margin-top: -70px;
+    font-size: 50px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+
+}
