@@ -8,12 +8,12 @@ import './App.css';
 
 const App = () => {
   return (
-    <div className="App">
-      <div className="container">
+    <div className="App a">
+      <div className="container c">
         <Sidebar />
-        <div className="main-content">
+        <div className="main-content m">
           <Navbar />
-          <div className="content">
+          <div className="content cc">
         
             <ReturnForm />
             

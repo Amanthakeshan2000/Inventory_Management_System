@@ -2,7 +2,7 @@
 body{
   background-color: rgb(242, 242, 242);
 }
-.App {
+.App.a{
     display: flex;
     justify-content: center;
     margin-top: 90px; 
@@ -10,7 +10,7 @@ body{
     
   }
   
-  .container {
+  .container.c{
     display: flex;
     flex: 1;
     max-width: 1630px;
@@ -19,7 +19,7 @@ body{
     
   }
   
-  .main-content {
+  .main-content.m{
     width: calc(100% - 275px);
     position: fixed;
     top: 90px;
@@ -35,7 +35,7 @@ body{
   }
   
   
-  .content {
+  .content.cc{
     padding: 20px;
     width: 100%;
   
