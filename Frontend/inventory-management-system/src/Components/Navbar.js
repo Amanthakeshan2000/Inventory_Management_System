@@ -9,7 +9,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className="navbar-left">
         {
-          
+            
         }
       </div>
       <div className="navbar-right">

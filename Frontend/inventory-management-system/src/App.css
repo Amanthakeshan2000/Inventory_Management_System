@@ -1,4 +1,7 @@
 /* App.css */
+body{
+  background-color: rgb(242, 242, 242);
+}
 .App {
     display: flex;
     justify-content: center;
@@ -28,14 +31,14 @@
     background-color: #fff;
     height: auto;
     padding: 0 20px;
-
+    border-radius: 8px;
   }
   
   
   .content {
     padding: 20px;
     width: 100%;
-   
+  
   }
   
   

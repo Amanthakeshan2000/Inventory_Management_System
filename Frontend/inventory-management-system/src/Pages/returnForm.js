@@ -53,7 +53,7 @@ const ReturnForm = () => {
       }
       <div className="row return-date-time">
         <div className="form-group col-md-6">
-          <label>Return Date</label>
+        <h6>Return Date</h6>
           <DatePicker
             selected={returnDate}
             onChange={handleDateChange}
@@ -62,7 +62,7 @@ const ReturnForm = () => {
           />
         </div>
         <div className="form-group col-md-6">
-          <label>Return Time</label>
+          <h6>Return Time</h6>
           <div className="custom-time-picker">
             <input
               type="text"
