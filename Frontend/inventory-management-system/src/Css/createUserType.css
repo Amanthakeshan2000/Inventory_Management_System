@@ -50,8 +50,18 @@
     align-items: left;
     padding: 20px;
   }
+
+  .mobile-size-div-logo{
+    justify-content: center;
+    display: flex;
+  }
+  .mobileSize-Logo{
+    margin-bottom: 70px;
+    width: 400px;
+    
+  }
   
-  h1 {
+  h1 { 
     font-size: 2em;
     margin-bottom: 0.5em;
     color: #5E5873;
@@ -135,3 +145,20 @@
     text-decoration: underline;
     cursor: pointer;
   }
+
+  /* Media query to hide left-side when width is less than 800px */
+@media (max-width: 800px) {
+  .full-pagecss {
+    display: none;
+  }
+
+  .user-type-selection {
+    flex: 1;
+  }
+  
+}
+@media ( min-width:800px){
+  .mobile-size-div-logo{
+    display: none;
+  }
+}

@@ -17,6 +17,9 @@ export default function CreateAcountuserType() {
       <div className="user-type-selection">
 
       <div className="right-side">
+        <div className='mobile-size-div-logo'>
+        <img src={createpagemainlogo} className='mobileSize-Logo' alt=''/> 
+        </div>
         <h1>Welcome!</h1>
         <p>First select your user type.</p>
         <div className="user-type-dropdown">
