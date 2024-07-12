@@ -52,11 +52,11 @@ export default function StaffandLecCreateAccount() {
       </div>
 
       <div className="input-group">
-            <label htmlFor="staff-email">Email</label>
+            <label htmlFor="email">Email</label>
             <input
               style={{ borderRadius: '5px' }} 
               type="email"
-              id="staff-email"
+              id="email"
               placeholder="Enter your email"
             />
           </div> 
