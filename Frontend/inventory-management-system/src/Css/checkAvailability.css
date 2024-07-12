@@ -24,6 +24,8 @@
   }
 
 
+
+  
   .horizontal2 {
     margin-bottom: 50px;
   
@@ -53,19 +55,34 @@
     font-size: 16px;
   }
 
+
+
+
   .need-date-label {
     font-size: 16px; 
   }
   
+  
   #need-date {
     border: 1px solid #d1d1d1;
-    border-radius: 6px; 
-    width: 532px;
-    height: 44px;
+    border-radius: 6px;
+    width: 532px; 
+    height: 44px; 
     font-size: 16px;
     line-height: 24px;
+    padding: 8px; 
+    box-sizing: border-box; 
+}
 
-  }
+
+@media (max-width: 600px) {
+    #need-date {
+        width: 100%; 
+    }
+}
+
+
+
 
 
 
@@ -79,12 +96,18 @@
     border: 1px solid #d1d1d1;
     border-radius: 6px; 
     padding: 5px; 
+    height: 44px;
+    width: 532;
   }
   
+
+
+
+
   .search-button {
     margin-top: 10px;
-    padding: 10px 20px;
     border: none;
+    padding: 10px 20px;
     background-color: #007bff;
     color: #ffffff;
     font-size: 15px;
@@ -94,11 +117,11 @@
     height: 38px;
     justify-content: center;
     line-height: 18px;
-    padding-left:20px ;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    
+
+    position: absolute;
+    bottom: 20px; 
+    right: 20px;
+  
   }
   
   .search-button:hover {
