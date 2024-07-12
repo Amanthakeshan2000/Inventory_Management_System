@@ -1,0 +1,168 @@
+.studentCreateAcc-page{
+    margin-top: -89px;
+    width: 100%;
+    height: 918px;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+}
+
+.register-BgImage{
+    display: flex;
+    float: left;
+    left: 0;
+   width: 60vw;
+   height: 110vh;
+   object-fit: cover;
+
+}
+
+.create-mainpage-logo{
+    width: 35vw;
+    display: flex;
+    margin-top: -90vh;
+    margin-left: 12vw;   
+}
+
+.full-pagecss{
+    display: flex;
+    flex-direction: column;
+
+}
+
+/*student create account side form*/
+.form-selection {
+    display: flex;
+    height: 110vh;
+    align-items: center;
+    
+    width: 900px;
+    margin-left: 70px;
+    margin-right: 70px;
+   
+  }
+  
+  
+  .right-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 20px;
+  }
+
+  .mobile-size-div-logo{
+    justify-content: center;
+    display: flex;
+  }
+  .mobileSize-Logo{
+    margin-bottom: 70px;
+    width: 400px;
+    
+  }
+  
+  h1 { 
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: #5E5873;
+  }
+  
+  p {
+    font-size: 16px;
+    margin-bottom: 1em;
+    font-weight: 12px;
+    color: #5E5873;
+  }
+
+
+  .input-group {
+    margin-bottom: 1em;
+    text-align: left;
+    border-radius: 5px;
+
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 0.5em;
+  }
+
+  .input-group input,
+  .input-group select {
+    color:#87868B;
+    background-color: #ffffff;
+    border: 1px solid #87868B;
+    border-radius:5px ;
+    height: 44px;
+    width: 100%;
+    padding: 0.5em;
+    font-size: 1em;
+  }
+  .input-group input:focus{
+    outline:auto;
+  }
+
+  
+
+  .have-acc-login-btn-1{
+    border: 2px solid #1C86E7;
+    background-color: #1C86E7;
+    width: 100%;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius:5px;
+  }
+  .have-acc-login-btn-1:focus{
+    outline: none;
+  }
+  .have-acc-login-btn-1:active {
+    background-color: #115799;
+    transform: translateY(0px);
+}
+  .have-acc-login-btn-2{
+    border: 2px solid #1C86E7;
+    width: 100%;
+    color: #1C86E7;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius:5px;
+  }
+  .have-acc-login-btn-2:active {
+    background-color: #73bafc;
+    transform: translateY(1px);
+}
+  
+  .login-linkbtn {
+    margin-top: 1em;
+  }
+  
+  .login-linkbtn a {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  /* Media query to hide left-side when width is less than 800px */
+@media (max-width: 800px) {
+  .full-pagecss {
+    display: none;
+  }
+
+  .studentCreateAcc-page {
+    flex: 1;
+  }
+  
+}
+@media ( min-width:800px){
+  .mobile-size-div-logo{
+    display: none;
+  }
+}
