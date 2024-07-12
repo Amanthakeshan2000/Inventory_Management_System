@@ -24,39 +24,30 @@ export default function StoreKeeperCreateAccount() {
       <p>First create your account.</p>
 
       <div className="input-group">
-           <label htmlFor="staff-id">Staff ID Number</label>
+           <label htmlFor="store--staff-id">Staff ID Number</label>
            <input
               style={{ borderRadius: '5px' }} 
               type="text"
-              id="staff-id"
+              id="store--staff-id"
               placeholder="Enter your staff ID number"
            />
      </div>
       <div className="input-group">
-            <label htmlFor="staff-name">Name</label>
+            <label htmlFor="store-staff-name">Name</label>
             <input
               style={{ borderRadius: '5px' }} 
               type="text"
-              id="staff-name"
+              id="store-staff-name"
               placeholder="Enter your name"
-            />
-      </div>
-      <div className="input-group">
-            <label htmlFor="staff-position">Position</label>
-            <input
-              style={{ borderRadius: '5px' }} 
-              type="text"
-              id="staff-position"
-              placeholder="Enter your job position"
             />
       </div>
 
       <div className="input-group">
-            <label htmlFor="staff-email">Email</label>
+            <label htmlFor="email">Email</label>
             <input
               style={{ borderRadius: '5px' }} 
               type="email"
-              id="staff-email"
+              id="email"
               placeholder="Enter your email"
             />
           </div> 
@@ -68,17 +59,7 @@ export default function StoreKeeperCreateAccount() {
               id="mobile-number"
               placeholder="Enter your mobile number"
             />
-          </div>  
-          <div className="input-group">
-            <label htmlFor="dep-name">Department</label>
-            <select id="dep-name" style={{ borderRadius: '5px' }} >
-              <option value="" disabled>Select your Department</option>
-              <option value="FOC">Faculty of Computing</option>
-              <option value="FOB">Faculty of Buessiness</option>
-              <option value="FOE">Faculty of Engineering</option>
-            </select>
-            <small className='small-text'>Only for lectures</small>
-          </div>  
+          </div>   
 
 
       <button className='have-acc-login-btn-1'>Next</button>
