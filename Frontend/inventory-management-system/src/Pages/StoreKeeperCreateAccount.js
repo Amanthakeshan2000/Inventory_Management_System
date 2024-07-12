@@ -1,13 +1,13 @@
 import React from 'react'
-import "../Css/staffandlec-create-acc.css"
+import "../Css/storekeeper-create-acc.css"
 import "../Css/bootstrap.css"
 import createpageBgImage from"../Assets/createBgimage.png"
 import createpagemainlogo from"../Assets/createpageLogo png-01 1.png"
 
-export default function StaffandLecCreateAccount() {
+export default function StoreKeeperCreateAccount() {
   return (
       
-    <div className='stafandLecCreateAcc-page'>
+    <div className='studentCreateAcc-page'>
     <div className='full-pagecss'>
       <img src={createpageBgImage} className='register-BgImage' alt=''/>
       
