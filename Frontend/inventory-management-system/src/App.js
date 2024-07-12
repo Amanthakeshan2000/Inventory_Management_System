@@ -7,6 +7,7 @@ import CreateAcountuserType from './Pages/CreateAcountuserType';
 import StudentCreateAccount from './Pages/StudentCreateAccount';
 import StaffandLecCreateAccount from './Pages/StaffandLecCreateAccount';
 import StoreKeeperCreateAccount from './Pages/StoreKeeperCreateAccount';
+import SuplierCreateAccount from './Pages/SuplierCreateAccount';
 
 const App = () => {
   return (
@@ -17,7 +18,8 @@ const App = () => {
 
       {/* <StudentCreateAccount/> */}
       {/* <StaffandLecCreateAccount/> */}
-      <StoreKeeperCreateAccount/>
+      {/* <StoreKeeperCreateAccount/> */}
+      <SuplierCreateAccount/>
 
     </div>
   );
