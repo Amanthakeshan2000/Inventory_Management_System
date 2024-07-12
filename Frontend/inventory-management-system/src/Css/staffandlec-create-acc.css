@@ -104,7 +104,10 @@
   .input-group input:focus{
     outline:auto;
   }
-
+  .small-text{
+    font-size: 0.75em;
+    color: rgb(85, 85, 85);
+  }
   
 
   .have-acc-login-btn-1{

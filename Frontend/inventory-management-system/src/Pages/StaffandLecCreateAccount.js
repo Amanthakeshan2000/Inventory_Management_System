@@ -24,29 +24,39 @@ export default function StaffandLecCreateAccount() {
       <p>First create your account.</p>
 
       <div className="input-group">
-            <label htmlFor="student-name">Student Name</label>
+           <label htmlFor="staff-id">Staff ID Number</label>
+           <input
+              style={{ borderRadius: '5px' }} 
+              type="text"
+              id="staff-id"
+              placeholder="Enter your staff ID number"
+           />
+     </div>
+      <div className="input-group">
+            <label htmlFor="staff-name">Name</label>
             <input
               style={{ borderRadius: '5px' }} 
               type="text"
-              id="student-name"
+              id="staff-name"
               placeholder="Enter your name"
             />
       </div>
       <div className="input-group">
-           <label htmlFor="student-id">Student ID Number</label>
-           <input
+            <label htmlFor="staff-position">Position</label>
+            <input
               style={{ borderRadius: '5px' }} 
               type="text"
-              id="student-id"
-              placeholder="Enter your student ID number"
-           />
-</div>
+              id="staff-position"
+              placeholder="Enter your job position"
+            />
+      </div>
+
       <div className="input-group">
-            <label htmlFor="email">Email</label>
+            <label htmlFor="staff-email">Email</label>
             <input
               style={{ borderRadius: '5px' }} 
               type="email"
-              id="email"
+              id="staff-email"
               placeholder="Enter your email"
             />
           </div> 
@@ -60,24 +70,15 @@ export default function StaffandLecCreateAccount() {
             />
           </div>  
           <div className="input-group">
-            <label htmlFor="batch">Batch</label>
-            <select id="batch" style={{ borderRadius: '5px' }} >
-              <option value="" disabled>Select your batch</option>
-              <option value="21.1">21.1</option>
-              <option value="21.2">21.2</option>
-              <option value="22.1">22.1</option>
-              <option value="22.2">22.2</option>
+            <label htmlFor="dep-name">Department</label>
+            <select id="dep-name" style={{ borderRadius: '5px' }} >
+              <option value="" disabled>Select your Department</option>
+              <option value="FOC">Faculty of Computing</option>
+              <option value="FOB">Faculty of Buessiness</option>
+              <option value="FOE">Faculty of Engineering</option>
             </select>
+            <small className='small-text'>Only for lectures</small>
           </div>  
-          <div className="input-group" style={{ borderRadius: '5px' }} >
-            <label htmlFor="degree">Degree</label>
-            <select id="degree">
-              <option value="" disabled>Select your degree</option>
-              <option value="Software Engineering">Software Engineering</option>
-              <option value="Computer Science">Computer Science</option>
-              <option value="Business Management">Business Management</option>
-            </select>
-          </div>
 
 
       <button className='have-acc-login-btn-1'>Next</button>
