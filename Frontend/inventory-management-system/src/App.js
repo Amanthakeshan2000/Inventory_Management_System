@@ -4,7 +4,7 @@ import Sidebar from './Components/Sidebar';
 import Navbar from './Components/Navbar';
 import ReturnForm from './Pages/returnForm';
 import './App.css';
-
+import CheckAvailability from './Pages/checkAvailability';
 
 const App = () => {
   return (
@@ -15,7 +15,9 @@ const App = () => {
           <Navbar />
           <div className="content cc">
         
-            {/* <ReturnForm /> */}
+          <CheckAvailability/>
+        
+
             
           </div>
         </div>
