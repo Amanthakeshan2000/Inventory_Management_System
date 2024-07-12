@@ -1,0 +1,41 @@
+.container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .breadcrumb {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .breadcrumb .active {
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .request-form-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .request-form-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .request-confirmation {
+    margin-left: 20px;
+    font-size: 14px;
+    color: #777;
+  }
+  
