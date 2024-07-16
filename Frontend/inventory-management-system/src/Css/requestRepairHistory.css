@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.repair-request-history {
+    background-color: #E5E5E5;
+    padding: 16px 20px;
+}
+
+.main-heading {
+    display: flex;
+    font-size: 22px;
+    font-weight: 500;
+    color: #4B465C;  
+    margin-bottom: 16px;
+    font-family: 'Poppins';
+}
+
+.page-body {
+    background-color: #FFFFFF;
+    padding: 24px 24px 66px 24px;
+    border-radius: 6px;
+}
+
+.history-data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+.table-heading{
+    font-family: 'Poppins';
+    font-size: 13px;
+    font-weight: 500;
+    color: #4B465C;
+    letter-spacing: 1px;
+
+}
+.history-data-table th,
+.history-data-table td {
+    padding: 12px 20px 12px 20px;
+    border-top: 1px solid #A8AAAE; /* Row lines */
+    border-bottom: 1px solid #DBDADE; /* Row lines */
+}
+
+.history-data-table thead th:first-child,
+.history-data-table tbody td:first-child {
+    border-left: 1px solid #A8AAAE; /* Left boundary line */
+}
+
+.history-data-table thead th:last-child,
+.history-data-table tbody td:last-child {
+    border-right: 1px solid #A8AAAE; /* Right boundary line */
+}
+
+.history-data-table thead {
+    background-color: transparent; /* Remove header background color */
+}
+
+.history-data-table tbody tr:nth-child(even) {
+    background-color: transparent; /* Remove alternating row colors */
+}
+
+.history-data-table tbody tr:hover {
+    background-color: #E5E5E5; 
+}
+
+.history-data-table tbody tr:last-child {
+    border-bottom: 1px solid #A8AAAE; /* bottom row */
+}
+
+.table-data {
+    font-weight: 400;
+    font-size: 15px;
+    font-family: 'Poppins';
+    color: #4B465C;
+    line-height: 24px;
+   
+}
+
+.trash-img {
+    height: 22px;
+    width: 22px;
+}
+
+.status-box {
+   display:flex;
+   align-self: center;
+   align-items: center;
+   justify-content: center;
+    height: 24px;
+    width: 74px;
+    border-radius: 4px;   
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'poppins';
+    
+   
+}
+
+.pending {
+    background-color: #FFF3E0;
+    color: orange;
+     /* Light orange background */
+}
+
+.rejected {
+    color: red;
+    background-color: #FFEBEE; /* Light red background */
+}
+.approved{
+    color: #28C76F;
+    background-color: #28c76f31;
+}
+.repaired{
+    background-color:#a8aaae30;
+    color: #A8AAAE;
+}
+.repairing{
+    background-color: #00d1e827;
+    color: #00CFE8;
+}
+
