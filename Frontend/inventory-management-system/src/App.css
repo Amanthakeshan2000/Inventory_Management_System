@@ -21,7 +21,7 @@ body{
   
   .main-content.m{
     width: calc(100% - 275px);
-    position: fixed;
+    position:absolute;
     top: 90px;
     display: flex;
     justify-content: space-between;
