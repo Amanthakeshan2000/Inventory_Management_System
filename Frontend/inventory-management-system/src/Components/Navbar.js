@@ -1,4 +1,3 @@
-// Navbar.js
 import React from 'react';
 import '../Css/Navbar.css';
 import profilePic from '../Assets/Active.png';
