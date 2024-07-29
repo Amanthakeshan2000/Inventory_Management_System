@@ -27,6 +27,7 @@ const CreateRequestPage = () => {
             <DescriptionQuantity />
             <DateTime />
             <LocationPerson />
+            <br/> <br/>
         <div className="form-actions btnRequest">
           <button className="back-btn">Back</button>                    
           <button className="save-request-btn">Save Request</button>
