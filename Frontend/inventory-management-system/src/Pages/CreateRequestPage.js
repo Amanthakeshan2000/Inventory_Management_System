@@ -3,6 +3,7 @@ import CategoryItems from '../Components/CategoryItems';
 import DescriptionQuantity from '../Components/DescriptionQuantity';
 import DateTime from '../Components/DateTime';
 import LocationPerson from '../Components/LocationPerson';
+import '../Css/createRequest.css';
 import '../Css/RequestForm.css';
 
 const CreateRequestPage = () => {
