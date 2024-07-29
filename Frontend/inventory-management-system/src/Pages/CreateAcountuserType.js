@@ -28,6 +28,7 @@ export default function CreateAcountuserType() {
             <option value="" disabled>Select your user type</option>
             <option value="student">Student</option>
             <option value="teacher">Lecturer or Staf</option>
+            <option value="teacher">Programme officer</option>
             <option value="teacher">Storekeeper</option>
             <option value="teacher">Head Storekeeper</option>
             <option value="teacher">Suplier</option>

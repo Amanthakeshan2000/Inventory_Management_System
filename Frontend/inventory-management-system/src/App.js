@@ -8,18 +8,22 @@ import StudentCreateAccount from './Pages/StudentCreateAccount';
 import StaffandLecCreateAccount from './Pages/StaffandLecCreateAccount';
 import StoreKeeperCreateAccount from './Pages/StoreKeeperCreateAccount';
 import SuplierCreateAccount from './Pages/SuplierCreateAccount';
+import HeadstorekeeperCreateAccount from './Pages/HeadstorekeeperCreateAccount';
+import ProgrammeofficerCreateAcc from './Pages/ProgrammeofficerCreateAcc';
 
 const App = () => {
   return (
     <div className="App1">
       
 
-      {/* <CreateAcountuserType/> */}
+       {/* <CreateAcountuserType/> */}
 
       {/* <StudentCreateAccount/> */}
       {/* <StaffandLecCreateAccount/> */}
-      {/* <StoreKeeperCreateAccount/> */}
-      <SuplierCreateAccount/>
+      {/* <StoreKeeperCreateAccount/>  */}
+      {/* <SuplierCreateAccount/> */}
+      {/* <HeadstorekeeperCreateAccount/> */}
+      <ProgrammeofficerCreateAcc/>
 
     </div>
   );

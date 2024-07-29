@@ -1,12 +1,11 @@
 import React from 'react'
 import "../Css/storekeeper-create-acc.css"
-import "../Css/bootstrap.css"
+import "../Css/headstorekeeper-create-acc.css"
 import createpageBgImage from"../Assets/createBgimage.png"
 import createpagemainlogo from"../Assets/createpageLogo png-01 1.png"
 
-export default function StoreKeeperCreateAccount() {
+export default function HeadstorekeeperCreateAccount() {
   return (
-      
     <div className='studentCreateAcc-page'>
     <div className='full-pagecss'>
       <img src={createpageBgImage} className='register-BgImage' alt=''/>
@@ -57,7 +56,7 @@ export default function StoreKeeperCreateAccount() {
               style={{ borderRadius: '5px' }} 
               type="text"
               id="staff-position"
-              placeholder="StoreKeeper"
+              placeholder="Head StoreKeeper"
             />
       </div>
           <div className="input-group">

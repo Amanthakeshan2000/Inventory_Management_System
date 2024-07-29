@@ -1,13 +1,13 @@
 import React from 'react'
-import "../Css/storekeeper-create-acc.css"
+import "../Css/P-officer-create-acc.css"
 import "../Css/bootstrap.css"
 import createpageBgImage from"../Assets/createBgimage.png"
 import createpagemainlogo from"../Assets/createpageLogo png-01 1.png"
 
-export default function StoreKeeperCreateAccount() {
+export default function ProgrammeofficerCreateAcc() {
   return (
       
-    <div className='studentCreateAcc-page'>
+    <div className='stafandLecCreateAcc-page'>
     <div className='full-pagecss'>
       <img src={createpageBgImage} className='register-BgImage' alt=''/>
       
@@ -24,21 +24,30 @@ export default function StoreKeeperCreateAccount() {
       <p>First create your account.</p>
 
       <div className="input-group">
-           <label htmlFor="store--staff-id">Staff ID Number</label>
+           <label htmlFor="staff-id">Staff ID Number</label>
            <input
               style={{ borderRadius: '5px' }} 
               type="text"
-              id="store--staff-id"
+              id="staff-id"
               placeholder="Enter your staff ID number"
            />
      </div>
       <div className="input-group">
-            <label htmlFor="store-staff-name">Name</label>
+            <label htmlFor="staff-name">Name</label>
             <input
               style={{ borderRadius: '5px' }} 
               type="text"
-              id="store-staff-name"
+              id="staff-name"
               placeholder="Enter your name"
+            />
+      </div>
+      <div className="input-group">
+            <label htmlFor="staff-position">Position</label>
+            <input
+              style={{ borderRadius: '5px' }} 
+              type="text"
+              id="staff-position"
+              placeholder="Programme officer"
             />
       </div>
 
@@ -52,15 +61,6 @@ export default function StoreKeeperCreateAccount() {
             />
           </div> 
           <div className="input-group">
-            <label htmlFor="staff-position">Position</label>
-            <input
-              style={{ borderRadius: '5px' }} 
-              type="text"
-              id="staff-position"
-              placeholder="StoreKeeper"
-            />
-      </div>
-          <div className="input-group">
             <label htmlFor="mobile-number">Mobile Number</label>
             <input
               style={{ borderRadius: '5px' }} 
@@ -68,7 +68,17 @@ export default function StoreKeeperCreateAccount() {
               id="mobile-number"
               placeholder="Enter your mobile number"
             />
-          </div>   
+          </div>  
+          <div className="input-group">
+            <label htmlFor="dep-name">Department</label>
+            <select id="dep-name" style={{ borderRadius: '5px' }} >
+              <option value="" disabled>Select your Department</option>
+              <option value="FOC">Faculty of Computing</option>
+              <option value="FOB">Faculty of Buessiness</option>
+              <option value="FOE">Faculty of Engineering</option>
+            </select>
+            <small className='small-text'>Only for lectures</small>
+          </div>  
 
 
       <button className='have-acc-login-btn-1'>Next</button>
