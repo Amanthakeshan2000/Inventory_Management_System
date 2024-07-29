@@ -1,41 +1,122 @@
+/* Base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
 .container {
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
-  
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.breadcrumb {
+  font-size: 22px;
+  color: #777;
+}
+
+.breadcrumb .active {
+  color: #000;
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.request-form-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.request-form-btn:hover {
+  background-color: #0056b3;
+  border: #0056b3;
+}
+
+.request-confirmation {
+  margin-left: 20px;
+  font-size: 16px;
+  color: #777;
+  flex-shrink: 0;
+}
+
+/* Responsive styles */
+
+/* Large screens (desktops) */
+@media (min-width: 992px) {
   .breadcrumb {
-    font-size: 14px;
-    color: #777;
+    font-size: 22px;
   }
-  
-  .breadcrumb .active {
-    color: #000;
-    font-weight: bold;
+
+  .request-form-btn, .request-confirmation {
+    font-size: 16px
   }
-  
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .breadcrumb {
+    font-size: 1rem;
+  }
+
+  .request-form-btn, .request-confirmation {
+    font-size: 1rem;
+  }
+
   .buttons {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
+    flex-direction: row;
   }
-  
+
   .request-form-btn {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 14px;
-    cursor: pointer;
-    border-radius: 4px;
+    width: auto;
+    margin-bottom: 0;
   }
-  
-  .request-form-btn:hover {
-    background-color: #0056b3;
-  }
-  
+
   .request-confirmation {
     margin-left: 20px;
-    font-size: 14px;
-    color: #777;
+    width: auto;
+    text-align: left;
   }
-  
+}
+
+/* Small screens (mobile phones) */
+@media (max-width: 767px) {
+  .breadcrumb {
+    font-size: 0.875rem;
+  }
+
+  .request-form-btn {
+    font-size: 0.875rem;
+    padding: 8px 16px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .request-confirmation {
+    font-size: 0.875rem;
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar';
 import ReturnForm from './Pages/returnForm';
 import './App.css';
 import RequestPage from './Pages/RequestPage';
+import CreateRequestPage from './Pages/CreateRequestPage';
 
 
 const App = () => {
@@ -16,7 +17,8 @@ const App = () => {
           <Navbar />
           <div className="content cc">
         
-       <RequestPage/>
+       {/* <RequestPage/> */}
+       <CreateRequestPage />
             
           </div>
         </div>
