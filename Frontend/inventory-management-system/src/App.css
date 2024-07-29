@@ -1,4 +1,3 @@
-/* App.css */
 body{
   background-color: rgb(242, 242, 242);
   font-family: 'Poppins',sans-serif;
@@ -27,18 +26,15 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1); */
     left: 260px; 
-    /* background-color: #fff; */
     height: auto;
-   
     border-radius: 8px;
   }
   
   
   .content.cc{
     width: 100%;
-  
+    padding: 20px;
   }
   
   
