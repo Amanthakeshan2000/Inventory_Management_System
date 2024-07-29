@@ -14,7 +14,7 @@ import Password_Confirm from './Pages/Password_Confirm';
 const App = () => {
   return (
     <div className="App a">    
-      {/* <div className="container c">
+      <div className="container c">
         <Sidebar />
         <div className="main-content m">
           <Navbar />
@@ -24,14 +24,14 @@ const App = () => {
             
           </div>
         </div>
-      </div> */}
+      </div>
       
-      <Router>
+      {/* <Router>
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/Password_Confirm" element={<Password_Confirm/>} />
       </Routes>
-    </Router>
+    </Router> */}
 
 
     </div>
