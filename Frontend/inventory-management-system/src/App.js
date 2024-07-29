@@ -3,7 +3,6 @@ import React from 'react';
 import Sidebar from './Components/Sidebar';
 import Navbar from './Components/Navbar';
 import './App.css';
-import RequestPage from './Pages/RequestPage';
 import CreateRequestPage from './Pages/CreateRequestPage';
 
 
