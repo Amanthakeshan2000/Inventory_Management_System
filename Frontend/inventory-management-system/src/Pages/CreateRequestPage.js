@@ -9,7 +9,13 @@ import '../Css/RequestForm.css';
 const CreateRequestPage = () => {
   return (
     <div className="create-request-page">
-      <h2>Request  / Create Request</h2>
+      <nav className="breadcrumb">
+        <span>Request </span> / <span className="active">Create Request</span>
+      </nav>
+      <div className="buttons">
+        <button className="request-form-btn">Request Form</button>
+        <span className="request-confirmation">Request confirmation</span>
+      </div>
       <br/>
       <div className="request-form">
       <div className="space">
