@@ -1,0 +1,22 @@
+.main-content {
+    flex-grow: 1;
+    padding: 0px;
+    
+}
+
+.greeting {
+    margin: 30px;
+    position: absolute;
+    color: rgb(81, 255, 0);
+}
+
+.date {
+    color: #ffffff;
+    margin: 0px;
+}
+
+.background-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}

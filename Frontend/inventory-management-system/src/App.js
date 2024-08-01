@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar';
 import ReturnForm from './Pages/returnForm';
 import './App.css';
 import CheckAvailability from './Pages/checkAvailability';
+import DashbordOne from './Pages/DashbordOne';
 
 const App = () => {
   return (
@@ -15,7 +16,8 @@ const App = () => {
           <Navbar />
           <div className="content cc">
         
-          <CheckAvailability/>
+          {/* <CheckAvailability/> */}
+          <DashbordOne/>
         
 
             
