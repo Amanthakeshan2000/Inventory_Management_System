@@ -1,15 +1,19 @@
 import React from 'react';
 import Select from 'react-select';
-import '../Css/RequestForm.css';
 
 const CustomSelect = ({ label, options, placeholder }) => {
   return (
-    <div className="custom-select-container">
-      {label && <label className="custom-select-label">{label}</label>}
+    <div style={{ marginBottom: '20px' }}>
+      {label && <label style={{ display: 'block', marginBottom: '8px', fontSize: '16px', color: '#333', fontFamily: 'Montserrat, sans-serif' }}>{label}</label>}
       <Select 
-        className="custom-select"
         options={options}
         placeholder={placeholder}
+        styles={{
+          control: (base) => ({
+            ...base,
+        
+          }),
+        }}
       />
     </div>
   );
