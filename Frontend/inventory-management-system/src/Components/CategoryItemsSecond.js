@@ -27,7 +27,7 @@ const CategoryItems = () => {
        </div>
        
        <button className="search-btn" style={{ outline: 'none', marginTop: '-10px', padding: '10px 20px', backgroundColor: '#007bff', color: 'white', border: 'none', cursor: 'pointer', borderRadius: '5px', fontSize: '16px' }}>
-   
+    Search
 </button>   
  </div>
   );
