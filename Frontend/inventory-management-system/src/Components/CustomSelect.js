@@ -11,7 +11,8 @@ const CustomSelect = ({ label, options, placeholder }) => {
         styles={{
           control: (base) => ({
             ...base,
-        
+            fontFamily: 'Montserrat, sans-serif',
+            fontSize: '14px',
           }),
         }}
       />
