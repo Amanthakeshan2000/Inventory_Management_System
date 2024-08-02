@@ -1,0 +1,118 @@
+
+
+.request-confirmation-content {
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: unset;
+    margin-top: 10px;
+    font-size: 16px;
+    background-color: #ffffff;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 5px;
+}
+
+.edit-btn .icon {
+    color: #4caf50; 
+}
+
+.delete-btn .icon {
+    color: #f44336; 
+}
+
+.edit-btn:hover .icon {
+    color: #388e3c; 
+}
+
+.delete-btn:hover .icon {
+    color: #c62828; 
+}
+
+.sent-request {
+    display: block;
+    margin: 20px 0 0 auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.sent-request:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.sent-request:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 15px;
+    }
+
+    td {
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td::before {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        transform: translateY(-50%);
+        font-weight: bold;
+    }
+
+    td:nth-of-type(1)::before { content: "CATEGORY"; }
+    td:nth-of-type(2)::before { content: "ITEMS"; }
+    td:nth-of-type(3)::before { content: "QUANTITY"; }
+    td:nth-of-type(4)::before { content: "START DATE"; }
+    td:nth-of-type(5)::before { content: "END DATE"; }
+    td:nth-of-type(6)::before { content: "TIME"; }
+    td:nth-of-type(7)::before { content: "LOCATION"; }
+    td:nth-of-type(8)::before { content: "RESPONSIBILITY"; }
+    td:nth-of-type(9)::before { content: "ACTIONS"; }
+}
