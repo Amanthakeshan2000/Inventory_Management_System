@@ -13,7 +13,7 @@ const DateTime = () => {
             <span className="note">Must request for a week.</span>
           </div>
           <div className="form-group col-md-6">
-            <label htmlFor="start-time"></label>
+            <label htmlFor="start-time">Start</label>
             <input type="time" id="start-time" className="form-control" />
           </div>
       </div>
