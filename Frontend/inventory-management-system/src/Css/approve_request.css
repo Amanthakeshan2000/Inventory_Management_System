@@ -1,0 +1,83 @@
+.approve_request{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 16px;
+}
+.direction{
+    display: flex;
+    
+}
+.request-title{
+    font-size: 22px;
+    color: #4b465c6a;
+    font-weight: 500;
+}
+.approve-request-title{
+    font-size: 22px;
+    color: #4B465C;
+    font-weight: 500;
+}
+.requester-details{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: none;
+    padding: 24px;
+    border-radius: 6px;
+    gap: 24px;
+}
+.requester{
+    display: flex;
+    gap: 60px;
+}
+.request-date{
+    display: flex;
+    gap: 20px;
+}
+.request-description{
+    display: flex;
+    gap: 58px;
+}
+.description{
+    display: flex;
+    flex-wrap: wrap;
+    width: 99%;
+}
+
+.request-approvech-buttons{
+    display: flex;
+   
+    gap: 20px;
+   justify-content: right;
+}
+.reject-button{
+    width: 91px;
+    height: 42px;
+    background-color: #a8aaae35;
+    border-radius: 6px;
+    border: none;
+    color: #A8AAAE;
+    font-size: 15px;
+    font-weight: 500;
+}
+.view-button{
+    width: 79px;
+    height: 42px;
+    background-color: #1C86E7;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+.requester-text{
+    color: #4B465C;
+    font-size: 16px;
+    font-weight: 500;
+}
+.requesterName-text{
+    color: #B0AFB8;
+    font-size: 16px;
+    font-weight: 400;
+}

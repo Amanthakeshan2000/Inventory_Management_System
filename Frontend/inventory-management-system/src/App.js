@@ -8,30 +8,25 @@ import Login from './Pages/Login';
 import { FaRoute } from 'react-icons/fa';
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 import Password_Confirm from './Pages/Password_Confirm';
-
+import ApproveRequest from './Components/Approve_Request';
 
 const App = () => {
   return (
     <div className="App a">
-      {/* <div className="container c">
+      <div className="container c">
         <Sidebar />
         <div className="main-content m">
           <Navbar />
           <div className="content cc">
         
-            <ReturnForm />
+            <ApproveRequest />
             
             
           </div>
         </div>
-      </div> */}
+      </div>
 
-      <Router>
-      <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/Password_Confirm" element={<Password_Confirm/>} />
-      </Routes>
-    </Router>
+
       
     </div>
   );
