@@ -4,13 +4,13 @@ import '../Css/RequestForm.css';
 
 const CategoryItems = () => {
   const categoryOptions = [
-
+    { value: 'electric', label: 'Electric' },
+    { value: 'furniture', label: 'Furniture' },
 
   ];
 
   const itemOptions = [
-    { value: 'led_tv', label: 'LED TV' },
-    { value: 'projector', label: 'Projector' },
+
   
   ];
 
