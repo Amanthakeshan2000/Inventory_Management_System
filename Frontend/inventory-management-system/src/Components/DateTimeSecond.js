@@ -25,7 +25,7 @@ const DateTime = () => {
           </div>
     
           <div className="form-group col-md-6">
-            <label htmlFor="end-time"></label>
+            <label htmlFor="end-time">End time</label>
             <input type="time" id="end-time" className="form-control" />
           </div>
       </div>
