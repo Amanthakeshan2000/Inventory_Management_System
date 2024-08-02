@@ -17,15 +17,18 @@ const CategoryItems = () => {
 
   return (
     <div className="category-items ">
-       <div className="row">
-       <div className="form-group col-md-6">
-        <CustomSelect label="Select Category" options={categoryOptions} placeholder="Choose a category" />
-      </div>
-      <div className="form-group col-md-6">
+   <div className="row">
+    <div className="form-group col-md-6" style={{ marginBottom: '20px' }}>
+        <CustomSelect  label="Select Category" options={categoryOptions} placeholder="Choose a category" />
+    </div>
+    <div className="form-group col-md-6" style={{ marginBottom: '20px' }}>
         <CustomSelect label="Select Items" options={itemOptions} placeholder="Choose an item" />
-      </div>
-       </div>
-      <button className="search-btn">Search</button>
+    </div>
+</div>
+<button className="search-btn" style={{ outline: 'none', marginTop: '-30px', padding: '10px 20px', backgroundColor: '#007bff', color: 'white', border: 'none', cursor: 'pointer', borderRadius: '5px', fontSize: '16px' }}>
+    Search
+</button>
+
     </div>
   );
 };
