@@ -13,7 +13,7 @@ export default function RequestPage() {
         <span className="request-confirmation">Request confirmation</span>
       </div>
 
-      {/* Adding the Category & Items form */}
+     
       
     
     </div>
