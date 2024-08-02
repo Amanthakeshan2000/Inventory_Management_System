@@ -1,0 +1,68 @@
+
+.request-history {
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.request-section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 18px;
+    color: #666;
+}
+
+h3 {
+    font-size: 16px;
+    color: #d9534f;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse:unset;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.status {
+    text-transform: capitalize;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    width: 100px;
+}
+
+.status.pending {
+    /* background-color: #ffebcc; */
+
+    color: #ff9800;
+}
+
+.status.approved {
+    /* background-color: #d4edda; */
+    color: #28a745;
+}
+
+.status.rejected {
+    /* background-color: #f8d7da; */
+    color: #dc3545;
+}
