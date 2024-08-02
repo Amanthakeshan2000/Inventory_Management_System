@@ -35,7 +35,7 @@ const DateTime = () => {
     <input type="radio" id="day" name="session" />
     <label htmlFor="day">Day</label>
     <input type="radio" id="night" name="session" defaultChecked />
-    <label htmlFor="night"></label>
+    <label htmlFor="night">Night</label>
   </div>
   <br/>
 </div>
