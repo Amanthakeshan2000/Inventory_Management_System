@@ -8,7 +8,7 @@ const DateTime = () => {
       <h5>Request date & time</h5>
       <div className="row">
           <div className="form-group col-md-6">
-            <label htmlFor="from-date"></label>
+            <label htmlFor="from-date">From</label>
             <input type="date" id="from-date" className="form-control" />
             <span className="note">Must request for a week.</span>
           </div>
