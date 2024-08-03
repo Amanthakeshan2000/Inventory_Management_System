@@ -1,14 +1,8 @@
-
-
-
-
 body {
-  height:auto;
+  height: auto;
   overflow: auto;
   width: 100%;
   position: relative;
- 
-
 }
 
 form {
@@ -16,12 +10,12 @@ form {
   flex-direction: column;
   gap: 10px;
   height: 446px;
-  
-  padding-bottom: 500px;
-  position: relative; 
+  padding: 20px; /* Add padding around all elements in the form */
+  position: relative;
   width: 100%;
-  
-
+  background-color: white;
+  border: 1px solid #d1d1d1;
+  border-radius: 6px;
 }
 
 .location-header h1 {
@@ -131,8 +125,7 @@ form {
   justify-content: center;
   line-height: 18px;
   position: absolute;
-  bottom: 0;
-  left: 1053px;
+  right: 16px;
   bottom: 16px;
 }
 

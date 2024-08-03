@@ -17,9 +17,9 @@ const App = () => {
           <Navbar />
           <div className="content cc">
         
-          {/* <CheckAvailability/> */}
+          <CheckAvailability/>
           {/* <DashbordOne/> */}
-          <SupApproveReq/>
+          {/* <SupApproveReq/> */}
         
 
             
