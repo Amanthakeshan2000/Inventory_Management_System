@@ -40,7 +40,7 @@ function RequestRepair() {
               />
             </div>
             <div className='category-selection-left'>
-              <h6 className='dropdown-header'>Select Category</h6>
+              <h6 className='dropdown-header'>Select Item</h6>
               <Dropdown
                 className='category-dropdown'
                 options={items} 
@@ -84,7 +84,6 @@ function RequestRepair() {
 
           
         </div>
-
         <div className='msg-date-selection'>
             <div className='category-selection-left'>
               <h6 className='dropdown-header'>Message (0 / 1000)</h6>
@@ -108,6 +107,8 @@ function RequestRepair() {
         </div>
       </div>
       </div>
+
+      
       </>
   )
 }
