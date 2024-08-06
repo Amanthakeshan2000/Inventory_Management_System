@@ -19,7 +19,7 @@ This system facilitates the management of inventory through a microservices arch
 The project is divided into more microservices:
 
 ##### User Service - User registration, authentication, and authorization. 
-###### # Endpoints:  
+###### Endpoints:  
 - 	POST /register - Register new users. 
 - 	POST /login - User login and token generation. 
 - 	GET /users/{id} - Fetch user details. 
