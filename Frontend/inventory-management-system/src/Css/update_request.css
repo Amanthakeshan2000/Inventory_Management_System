@@ -1,0 +1,52 @@
+.updateRrquest-dropdown{
+    width: 100%;
+}
+.updateRrquest-dropd{
+    width: 48%;
+    
+}
+.location-dropdowns{
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    
+}
+@media (max-width:754px){
+    .updateRrquest-dropd{
+        width: 100%;
+        
+    }
+}
+.updateRrquest-description{
+    width: 100%;
+    height: 132px;
+    
+}
+/* p{
+    justify-content: start;
+} */
+.radio-buttons{
+    display: flex;
+    gap: 24px;
+}
+.request-approvech-buttons{
+    display: flex;
+    float: right;
+    gap: 16px;
+}
+.back-button{
+    width: 80px;
+    height: 42px;
+    background-color: #a8aaae36;
+    color: #A8AAAE;
+    border-radius: 6px;
+    border-color: #BABFC7;
+}
+.updateRequest-Button{
+    width:170px;
+    height:42px;
+    background-color: #1C86E7;
+    color: white;
+    border-radius: 6px;
+    border-color: #1C86E7;
+}
