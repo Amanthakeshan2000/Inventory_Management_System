@@ -20,11 +20,11 @@ The project is divided into more microservices:
 
  01. User Service - User registration, authentication, and authorization.
        Endpoints:
-           POST /register - Register new users.
-           POST /login - User login and token generation.
-           GET /users/{id} - Fetch user details.
-           PUT /users/{id} - Update user details.
-           DELETE /users/{id} - Delete users.
+           1. POST /register - Register new users.
+           2. POST /login - User login and token generation.
+           3. GET /users/{id} - Fetch user details.
+           4. PUT /users/{id} - Update user details.
+           5. DELETE /users/{id} - Delete users.
 
 02. Item Service - Manage item details, requests, and categories.
        Endpoints:
