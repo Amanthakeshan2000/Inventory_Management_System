@@ -15,15 +15,65 @@ This system facilitates the management of inventory through a microservices arch
 5. Item and Place Availability:Users can check the availability of items and places, request them, and see their usage details.
 6. Return and Maintenance:Users can request item repairs or returns, with approvals and updates managed by store keepers.
 
-# Microservices
-The project is divided into six microservices:
+# Microservices Structure
+The project is divided into more microservices:
 
-1. User Service: Manages user registration, authentication, and authorization.
-2. Inventory Service: Handles inventory items, including adding, updating, and deleting items.
-3. Request Service: Manages requests for items and places, including approval workflows.
-4. Supplier Service: Handles interactions with suppliers for inventory requests.
-5. Warehouse Service: Manages the storage and tracking of inventory items within university warehouses.
-6. Notification Service: Sends alerts and notifications for requests, approvals, and inventory status updates.
+ 01. User Service - User registration, authentication, and authorization.
+       Endpoints:
+           POST /register - Register new users.
+           POST /login - User login and token generation.
+           GET /users/{id} - Fetch user details.
+           PUT /users/{id} - Update user details.
+           DELETE /users/{id} - Delete users.
+
+02. Item Service - Manage item details, requests, and categories.
+       Endpoints:
+           POST /items - Create Items and Update Item (Add Item).
+           GET /items - Fetch item list.
+           GET /items/{id} - Fetch item details.
+           POST /categories - Create Categories.
+           GET /categories - Fetch item categories.
+           PUT /categories/{id} - Update item categories.
+           PUT /items/{id} - Update item.
+           DELETE /items/{id} - Delete item.
+
+ 03. Request Service - Handle item requests, location requests, repair requests, and return
+       Endpoints:
+           POST /requests - Create a new request (item, location, repair, return).
+           GET /requests - Fetch all requests.
+           GET /requests/{id} - Fetch request details.
+           PUT /requests/{id} - Update a request.
+           DELETE /requests/{id} - Delete a request.
+           PUT /requests/{id}/approve - Approve or reject requests.
+
+ 04. Approval Service - Manage approvals from supervisors, storekeepers, and head person.
+       Endpoints:
+           GET /approvals - Fetch pending approvals.
+           PUT /approvals/{id} - Approve or reject items or requests.
+
+05. Store Keeper Service - Manage store keeper-specific actions such as item procurement and supplier management.
+       Endpoints:
+           POST /procurements - Create procurement requests.
+           GET /procurements - Fetch procurement requests.
+           PUT /procurements/{id} - Update procurement requests.
+           DELETE /procurements/{id} - Delete procurement requests.
+           PUT /procurements/{id}/approve - Approve procurement requests.
+           POST /suppliers - Add or update supplier details.
+           GET /suppliers - Fetch suppliers.
+           PUT /suppliers/{id}/select - Select supplier for procurement.
+
+06. Supplier Service - Manage supplier details and pricing.
+       Endpoints:
+           POST /suppliers/{id}/pricing - Add or update pricing for items.
+           GET /suppliers/{id}/pricing - Fetch supplier pricing details.
+           PUT /suppliers/{id}/pricing - Update pricing for items.
+           DELETE /suppliers/{id}/pricing - Delete pricing for items.
+
+07. Notification Service - Send notifications (e.g., request statuses, approvals).
+       Endpoints:
+           POST /notifications - Send a notification.
+           GET /notifications - Fetch notifications.
+
 
 # Technologies Used
 
@@ -83,6 +133,3 @@ We welcome contributions from the community! To contribute, follow these steps:
   - Push to the branch (git push origin feature-branch).
   - Open a Pull Request.
 
-# Contact
-
-  - For any questions or support, please contact us at support@nsbm-university.com.
