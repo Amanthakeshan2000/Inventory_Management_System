@@ -28,14 +28,14 @@ The project is divided into more microservices:
 
 02. Item Service - Manage item details, requests, and categories.
        Endpoints:
-           POST /items - Create Items and Update Item (Add Item).
-           GET /items - Fetch item list.
-           GET /items/{id} - Fetch item details.
-           POST /categories - Create Categories.
-           GET /categories - Fetch item categories.
-           PUT /categories/{id} - Update item categories.
-           PUT /items/{id} - Update item.
-           DELETE /items/{id} - Delete item.
+           - POST /items - Create Items and Update Item (Add Item).
+           - GET /items - Fetch item list.
+           - GET /items/{id} - Fetch item details.
+           - POST /categories - Create Categories.
+           - GET /categories - Fetch item categories.
+           - PUT /categories/{id} - Update item categories.
+           - PUT /items/{id} - Update item.
+           - DELETE /items/{id} - Delete item.
 
  03. Request Service - Handle item requests, location requests, repair requests, and return
        Endpoints:
