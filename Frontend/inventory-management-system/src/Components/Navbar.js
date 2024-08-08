@@ -2,12 +2,16 @@
 import React from 'react';
 import '../Css/Navbar.css';
 import profilePic from '../Assets/Active.png';
+import '../Css/bootstrap.css';
 
 const Navbar = () => {
   return (
     <div className="navbar">
+      
       <div className="navbar-left">
-        {/* Add any additional items on the left side if needed */}
+        {
+            
+        }
       </div>
       <div className="navbar-right">
         <div className="user-info">

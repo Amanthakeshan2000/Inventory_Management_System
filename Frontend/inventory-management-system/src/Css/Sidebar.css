@@ -16,7 +16,7 @@
   align-items: center;
   cursor: pointer;
   color: #000000;
-  width: 80%;
+  width: 90%;
   margin-left: 4%;
 }
 .sidebar .logo {
@@ -32,7 +32,7 @@
 }
 
 .menuItem {
-  width: 92%;
+  width: 100px;
   margin-left: 4%;
   padding: 15px;
   display: flex;

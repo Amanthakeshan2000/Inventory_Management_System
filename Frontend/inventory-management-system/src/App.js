@@ -3,29 +3,33 @@ import React from 'react';
 import Sidebar from './Components/Sidebar';
 import Navbar from './Components/Navbar';
 import './App.css';
-import CreateAcountuserType from './Pages/CreateAcountuserType';
-import StudentCreateAccount from './Pages/StudentCreateAccount';
-import StaffandLecCreateAccount from './Pages/StaffandLecCreateAccount';
-import StoreKeeperCreateAccount from './Pages/StoreKeeperCreateAccount';
-import SuplierCreateAccount from './Pages/SuplierCreateAccount';
-import HeadstorekeeperCreateAccount from './Pages/HeadstorekeeperCreateAccount';
-import ProgrammeofficerCreateAcc from './Pages/ProgrammeofficerCreateAcc';
-import HSKrequestItemForm from './Pages/HSKrequestItemForm';
+
+import Testtestone from './Pages/Testtestone';
+
+
 
 const App = () => {
   return (
-    <div className="App1">
+    <div className="App a">    
+      <div className="container c">
+        <Sidebar />
+        <div className="main-content m">
+          <Navbar />
+          <div className="content cc">
+          {/* <DashbordOne/> */}
+           <Testtestone/> 
+            
+          </div>
+        </div>
+      </div> 
       
+      {/* <Router>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/Password_Confirm" element={<Password_Confirm/>} />
+      </Routes>
+    </Router> */}
 
-       {/* <CreateAcountuserType/> */}
-
-      {/* <StudentCreateAccount/> */}
-      {/* <StaffandLecCreateAccount/> */}
-      {/* <StoreKeeperCreateAccount/>  */}
-      {/* <SuplierCreateAccount/> */}
-      {/* <HeadstorekeeperCreateAccount/> */}
-      {/* <ProgrammeofficerCreateAcc/> */}
-      <HSKrequestItemForm/>
 
     </div>
   );

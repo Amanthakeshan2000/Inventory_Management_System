@@ -1,39 +1,40 @@
-/* App.css */
-.App {
+body{
+  background-color: rgb(242, 242, 242);
+  font-family: 'Poppins',sans-serif;
+}
+.App.a{
     display: flex;
     justify-content: center;
     margin-top: 90px; 
     height: 100vh;
+    
   }
   
-  .container {
+  .container.c{
     display: flex;
     flex: 1;
     max-width: 1630px;
     margin-left: 13%;
     width: auto; 
+    
   }
   
-  .main-content {
-    width: calc(100% - 310px);
-    position: fixed;
+  .main-content.m{
+    width: calc(100% - 275px);
+    position: absolute;
     top: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
     left: 260px; 
-    background-color: #fff;
     height: auto;
-    padding: 0 20px;
-    display: flex;
+    border-radius: 8px;
   }
   
   
-  .content {
+  .content.cc{
+    width: 100%;
     padding: 20px;
-
-    
   }
   
   
