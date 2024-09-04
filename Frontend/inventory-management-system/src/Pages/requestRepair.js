@@ -97,6 +97,7 @@ function RequestRepair() {
               <input
                 className='date-input'
                 type='date'
+                dateFormat="dd MMM yyyy"
               />
             </div>
         </div>
