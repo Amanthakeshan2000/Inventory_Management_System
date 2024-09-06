@@ -1,1 +1,29 @@
 For handling HTTP requests and responses.
+
+GET - http://localhost:8082/api/v1/approval/getApproval
+
+POST - http://localhost:8082/api/v1/approval/saveApproval
+      {
+            "approval_Id": 23791,
+            "approval_Name": "Amantha Keshan",
+            "create_Date": "2024-09-01T10:15:30",
+            "status": "Pending"
+     }
+
+PUT - http://localhost:8082/api/v1/approval/updateApproval/4
+      {
+            "approval_Id": 82856,
+            "approval_Name": "Kaveesha Madhushani",
+            "create_Date": "2024-09-01T10:15:31",
+            "status": "Accept"
+     }
+
+DELETE - http://localhost:8082/api/v1/approval/deleteApproval/3
+
+GET - http://localhost:8082/api/v1/approval/11
+
+GET - http://localhost:8082/api/v1/approval/byApprovalId/200010
+
+GET - http://localhost:8082/api/v1/approval/byStatus/Accept
+
+PUT - http://localhost:8082/api/v1/approval/update/22856 (For Update Status to Approved)
