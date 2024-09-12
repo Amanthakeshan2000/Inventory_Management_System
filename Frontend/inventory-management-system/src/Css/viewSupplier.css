@@ -1,0 +1,101 @@
+/* Style the table */
+.supplier-table {
+    border-collapse: collapse; 
+    width: 100%; 
+    border: 1px solid #DBDADE; 
+}
+
+.supplier-table td {
+    border: none; 
+    text-align: left;
+    padding: 16px 21px 16px 20px;
+    font-weight: medium;
+    font-size: 14px;
+    color: #4b465cd2;
+}
+.supplier-table th{
+    border: none; 
+    text-align: left;
+    padding: 16px 26px 16px 26px;
+    font-weight: medium;
+    font-size: 14px;
+    color: #4b465cd2;
+}
+
+.supplier-table tr {
+    border-bottom: 1px solid #dbdadea9; 
+}
+
+.supplier-table thead tr {
+    border-top: 1px solid #dbdadea9; 
+}
+
+.supplier-table td:first-child,
+.supplier-table th:first-child {
+    border-left: none; 
+}
+
+.supplier-table td:last-child,
+.supplier-table th:last-child {
+    border-right: none;
+}
+
+.icons-container {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.choise-icon{
+    color: #4B465C;
+    font-size: 20px;
+   margin: 15px 10px 15px 10px;
+}
+
+.choise-icon-edit{
+    color: #4B465C;
+    font-size: 22px;
+   margin: 15px 10px 15px 10px;
+}
+
+.choise-icon:hover{
+    color: #4a445e;
+    font-size: 24px;
+    margin: 12px 8px 12px 8px;
+}
+
+.choise-icon-edit:hover{
+    color: #4B465C;
+    font-size: 26px;
+    margin: 13px 8px 13px 8px;
+}
+
+.procurement-form-container{
+    background-color: white;
+    border-radius: 6px;
+    padding: 26px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.form-item {
+    flex: 1;
+}
+
+.form-item label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+
+
+.form-item{
+    padding: 15px;
+}

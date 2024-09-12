@@ -1,0 +1,29 @@
+
+.procurement-form-container{
+    background-color: white;
+    border-radius: 6px;
+    padding: 26px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.form-item {
+    flex: 1;
+}
+
+.form-item label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+
+
+.form-item{
+    padding: 15px;
+}
