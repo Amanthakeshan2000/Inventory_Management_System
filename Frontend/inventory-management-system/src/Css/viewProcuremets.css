@@ -1,0 +1,101 @@
+/* Style the table */
+.procurement-table {
+    border-collapse: collapse; 
+    width: 100%; 
+    border: 1px solid #DBDADE; 
+}
+
+.procurement-table td {
+    border: none; 
+    text-align: left;
+    padding:18px 45px 18px 48px;
+    font-weight: medium;
+    font-size: 14px;
+    color: #4b465cd2;
+}
+.procurement-table th{
+    border: none; 
+    text-align: left;
+    padding: 18px 50px 18px 50px;
+    font-weight: medium;
+    font-size: 14px;
+    color: #4b465cd2;
+}
+
+.procurement-table tr {
+    border-bottom: 1px solid #dbdadea9; 
+}
+
+.procurement-table thead tr {
+    border-top: 1px solid #dbdadea9; 
+}
+
+.procurement-table td:first-child,
+.procurement-table th:first-child {
+    border-left: none; 
+}
+
+.procurement-table td:last-child,
+.procurement-table th:last-child {
+    border-right: none;
+}
+
+.icons-container {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.choise-icon{
+    color: #4B465C;
+    font-size: 20px;
+   margin: 15px 20px 15px 20px;
+}
+
+.choise-icon-edit{
+    color: #4B465C;
+    font-size: 22px;
+   margin: 15px 10px 15px 10px;
+}
+
+.choise-icon:hover{
+    color: #4a445e;
+    font-size: 24px;
+    margin: 12px 8px 12px 8px;
+}
+
+.choise-icon-edit:hover{
+    color: #4B465C;
+    font-size: 26px;
+    margin: 13px 8px 13px 8px;
+}
+
+.procurement-form-container{
+    background-color: white;
+    border-radius: 6px;
+    padding: 26px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.form-item {
+    flex: 1;
+}
+
+.form-item label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+
+
+.form-item{
+    padding: 15px;
+}
