@@ -1,0 +1,57 @@
+
+
+.heading-button{
+    color:  #A8AAAE;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 30px;
+    height: 38px;
+    border-radius: 6px;
+    border: none;
+    margin: 16px 0 16px 0;
+    font-family: 'poppins';
+}
+
+.heading-button.active {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #1C86E7;
+    padding: 5px 30px;
+    height: 38px;
+    border-radius: 6px;
+    margin: 16px 0;
+    font-family: 'Poppins';
+    border: none;
+}
+
+.heading-button:hover {
+    color:  #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #1C86E7;
+    padding: 5px 30px;
+    height: 38px;
+    border-radius: 6px;
+    border: none;
+    margin: 16px 0 16px 0;
+    font-family: 'poppins';
+    border: none;
+}
+
+
+.headings-button {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #1C86E7;
+    padding: 5px 30px;
+    height: 38px;
+    border-radius: 6px;
+    margin: 16px 0;
+    font-family: 'Poppins';
+    border: none;
+}
+.form-item{
+    padding: 15px;
+}

@@ -78,42 +78,42 @@ function EditSupplier() {
     };
 
     const handleSubmit = async (event) => {
-        event.preventDefault();
-    
-        // Construct the URL for updating a specific supplier
-        const url = `http://localhost:8081/api/v1/suppliers/supplier/${id}`;
-    
-        const updatedSupplier = {
-            name,
-            contactEmail,
-            contactPhone,
-            address,
-            city,
-            state,
-            postalCode,
-            country,
-            status,
-        };
-    
-        try {
-            const response = await fetch(url, {
-                method: 'PUT',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(updatedSupplier),
-            });
-    
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-    
-            navigate('/view-suppliers');
-        } catch (error) {
-            console.error('Failed to update supplier:', error);
-        }
+    event.preventDefault();
+
+    // Construct the URL for updating a specific supplier
+    const url = `http://localhost:8081/api/v1/suppliers/supplier/${id}`;
+
+    const updatedSupplier = {
+        name,
+        contactEmail,
+        contactPhone,
+        address,
+        city,
+        state,
+        postalCode,
+        country,
+        status,
     };
-    
+
+    try {
+        const response = await fetch(url, {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(updatedSupplier),
+        });
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        navigate('/view-suppliers');
+    } catch (error) {
+        console.error('Failed to update supplier:', error);
+    }
+};
+
 
     if (!supplier) {
         return <div>Loading...</div>;

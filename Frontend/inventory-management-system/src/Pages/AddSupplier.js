@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'; 
 import { useNavigate } from 'react-router-dom'; 
 import '../Css/addSupplier.css';
 import UpperSection from '../Components/UpperSection';
@@ -17,7 +17,7 @@ function AddSupplier() {
         priority: 'LOW',  // Default priority is LOW
     });
 
-    const navigate = useNavigate(); 
+    const navigate = useNavigate(); // Use navigate for programmatic navigation
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -29,7 +29,7 @@ function AddSupplier() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        
+
         try {
             const response = await fetch('http://localhost:8081/api/v1/suppliers/supplier', {
                 method: 'POST',
@@ -40,19 +40,23 @@ function AddSupplier() {
             });
 
             if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
+                throw new Error('Network response was not ok');
             }
 
-            // Redirect to a different page upon successful submission
-            navigate('/view-suppliers');
+            const data = await response.json();
+            console.log('Supplier Added', data);
+            // Optionally redirect or show a success message here
+            navigate('/view-suppliers'); // Redirect to the suppliers list or another page
         } catch (error) {
-            console.error('Failed to save supplier:', error);
+            console.error('There was an error adding the supplier!', error);
+            // Handle error accordingly (e.g., show an error message)
         }
     };
 
     return (
         <>
             <div className='procurements-main'>
+                <div className='header-section'></div>
                 <div className='heading'>
                     <p className='heading-request'>
                         Supplier / <section className='heading-create-req'>Add Supplier</section>
@@ -197,7 +201,7 @@ function AddSupplier() {
                                     name="country"
                                     value={formData.country}
                                     onChange={handleChange}
-                                    placeholder="Enter Supplier's Country"
+                                    placeholder="Enter Country"
                                     required
                                 />
                             </div>
