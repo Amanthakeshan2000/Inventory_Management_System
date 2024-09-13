@@ -1,0 +1,71 @@
+.buy-approve-request-page{
+    flex: 1 0 auto;
+}
+.breadcrumb {
+    font-size: 22px;
+    color: #777;
+  }
+  
+  .breadcrumb .active {
+    color: #000;
+    font-weight: bold;
+  }
+
+
+
+
+.approve-request {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 16px;
+}
+
+
+.request-details {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.detail {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.detail strong {
+    flex: 1;
+    text-align: left;
+    margin-right: 10px;
+}
+
+.detail p {
+    flex: 2;
+    text-align: left;
+    margin: 0;
+}
+
+.fulviewbtn{
+height: 44px;
+}
+
+.view-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    align-self: flex-end; /* Align button to the right */
+    position: absolute; /* Absolute positioning */
+    right: 0; /* Align to the right edge */
+    bottom: 0; /* Align to the bottom edge */
+    
+}
+
+.view-button:hover {
+    background-color: #0056b3;
+    
+}

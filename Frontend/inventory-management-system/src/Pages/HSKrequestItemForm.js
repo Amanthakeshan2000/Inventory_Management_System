@@ -3,15 +3,15 @@ import Select from 'react-select';
 import "../Css/head-sk-req-form.css"
 
 // CreateRequestPage Component
-const CreateRequestPage = () => {
+const HSKrequestItemForm = () => {
   return (
     <div className="create-request-page">
       <nav className="breadcrumb">
-        <span>Request </span> / <span className="active">Create Request</span>
+        <span>Buy </span> / <span className="active">Request Items</span>
       </nav>
+      <br/><br/>
       <div className="buttons">
         <button className="request-form-btn">Request Form</button>
-        <span className="request-confirmation">Request confirmation</span>
       </div>
       <br/>
       <div className="request-form">
@@ -25,7 +25,7 @@ const CreateRequestPage = () => {
           <br /> <br />
           <div className="form-actions btnRequest">
             <button className="back-btn">Back</button>                    
-            <button className="save-request-btn">Save Request</button>
+            <button className="save-request-btn">Send Request</button>
           </div>
         </div>    
       </div>
@@ -48,6 +48,7 @@ const CategoryItems = () => {
   return (
     <div className="category-items">
       <div className="row">
+      <h5>Category & Items</h5>
         <div className="form-group col-md-6">
           <CustomSelect label="Select Category" options={categoryOptions} placeholder="Choose a category" />
         </div>
@@ -65,37 +66,12 @@ const DateTime = () => {
   return (
     <div className="date-time">
       <br/>
-      <h5>Request date & time</h5>
+      <h5>Request date</h5>
       <div className="row">
         <div className="form-group col-md-6">
-          <label htmlFor="from-date">From</label>
+          <label htmlFor="from-date">On</label>
           <input type="date" id="from-date" className="form-control" />
-          <span className="note">Must request for a week.</span>
         </div>
-        <div className="form-group col-md-6">
-          <label htmlFor="start-time">Start time</label>
-          <input type="time" id="start-time" className="form-control" />
-        </div>
-      </div>
-      <div className="row">
-        <div className="form-group col-md-6">
-          <label htmlFor="to-date">To</label>
-          <input type="date" id="to-date" className="form-control" />
-        </div>
-        <div className="form-group col-md-6">
-          <label htmlFor="end-time">End time</label>
-          <input type="time" id="end-time" className="form-control" />
-        </div>
-      </div>
-      <div className="form-group">
-        <br/>
-        <div className="radio-group">
-          <input type="radio" id="day" name="session" />
-          <label htmlFor="day">Day</label>
-          <input type="radio" id="night" name="session" defaultChecked />
-          <label htmlFor="night">Night</label>
-        </div>
-        <br/>
       </div>
       <br/>
     </div>
@@ -106,7 +82,7 @@ const DateTime = () => {
 const DescriptionQuantity = () => {
   return (
     <div className="description-quantity">
-      <h5>Request Details</h5>
+      
       <div className="row">
         <div className="form-group col-md-6">
           <label htmlFor="description">Description</label>
@@ -124,28 +100,28 @@ const DescriptionQuantity = () => {
 // LocationPerson Component
 const LocationPerson = () => {
   const categoryOptions = [
-    { value: 'electric', label: 'Electric' },
-    { value: 'furniture', label: 'Furniture' },
+    { value: 'abc_company', label: 'ABC Company' },
+    { value: 'xyz_company', label: 'XYZ Company' },
   ];
+
+  const categoryOptions2 = [
+    { value: 'abc_company_no', label: '077 4352345' },
+    { value: 'xyz_company_no', label: '055 3535356' },
+  ];
+  
 
   return (
     <div className="location-person">
-      <h5>Request Details</h5>
+      <h5>Supplier</h5>
       <div className="row">
         <div className="form-group col-md-6">
-          <CustomSelect label="Select Faculty" options={categoryOptions} placeholder="Choose a Faculty" />
+          <CustomSelect label="Company Name" options={categoryOptions} placeholder="Choose a Company" />
         </div>
         <div className="form-group col-md-6">
-          <CustomSelect label="Select Hall or Room" options={categoryOptions} placeholder="Choose a Hall or Room" />
+          <CustomSelect label="Phone Number" options={categoryOptions2} placeholder="Phone Number" />
         </div>
       </div>
       <br/>
-      <div className="form-group">
-        <h5>Responsible Person</h5>
-        <div className="form-group">
-          <CustomSelect label="Select Responsible Person" options={categoryOptions} placeholder="Choose a Responsible Person" />
-        </div>
-      </div>
     </div>
   );
 };
@@ -164,4 +140,4 @@ const CustomSelect = ({ label, options, placeholder }) => {
   );
 };
 
-export default CreateRequestPage;
+export default HSKrequestItemForm;
