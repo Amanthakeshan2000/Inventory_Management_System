@@ -76,6 +76,9 @@ function EditSupplier() {
                 break;
         }
     };
+    const handleCancel = () => {
+        navigate('/view-suppliers'); 
+    };
 
     const handleSubmit = async (event) => {
     event.preventDefault();
@@ -268,7 +271,8 @@ function EditSupplier() {
                     </div>
                 </div>
 
-                <button type="submit" className="headings-button">Save Supplier</button>
+                    <button type="submit" className="headings-button">Save Supplier</button>
+                    <button type="button" className="cancel-button" onClick={handleCancel}>Cancel</button>
             </form>
             </div>
             </>

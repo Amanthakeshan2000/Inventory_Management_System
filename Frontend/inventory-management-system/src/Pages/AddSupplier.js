@@ -4,7 +4,7 @@ import '../Css/addSupplier.css';
 import UpperSection from '../Components/UpperSection';
 
 function AddSupplier() {
-    const [formData, setFormData] = useState({
+    const initialFormData = {
         name: '',
         contactEmail: '',
         contactPhone: '',
@@ -15,8 +15,9 @@ function AddSupplier() {
         country: '',
         status: 'ACTIVE', // Default status is ACTIVE
         priority: 'LOW',  // Default priority is LOW
-    });
+    };
 
+    const [formData, setFormData] = useState(initialFormData);
     const navigate = useNavigate(); // Use navigate for programmatic navigation
 
     const handleChange = (e) => {
@@ -51,6 +52,9 @@ function AddSupplier() {
             console.error('There was an error adding the supplier!', error);
             // Handle error accordingly (e.g., show an error message)
         }
+    };
+    const handleClear = () => {
+        setFormData(initialFormData);
     };
 
     return (
@@ -208,6 +212,7 @@ function AddSupplier() {
                         </div>
 
                         <button type="submit" className="headings-button">Save Supplier</button>
+                        <button type="button" className="cancel-button" onClick={handleClear}>Cancel</button>
                     </form>
                 </div>
             </div>

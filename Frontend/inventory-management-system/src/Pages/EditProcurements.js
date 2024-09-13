@@ -101,7 +101,9 @@ function EditProcurement() {
         }
     };
     
-
+    const handleCancel = () => {
+        navigate('/View-Procurements'); // Navigate back to the suppliers list or any other route you prefer
+    };
     if (!procurement) {
         return <div>Loading...</div>;
     }
@@ -207,6 +209,7 @@ function EditProcurement() {
                     </div>
 
                     <button type="submit" className="headings-button">Save Procurement</button>
+                    <button type="button" className="cancel-button" onClick={handleCancel}>Cancel</button>
                 </form>
             </div>
         </>

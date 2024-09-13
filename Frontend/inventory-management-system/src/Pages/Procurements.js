@@ -68,7 +68,16 @@ function Procurements() {
             console.error('There was an error submitting the form!', error);
         }
     };
-    
+    const handleCancel = () => {
+        setFormData({
+            itemName: '',
+            quantity: '',
+            requestedBy: '',
+            requiredByDate: '',
+            requiredTime: '',
+            priority: 'LOW',
+        });
+    };
     
 
     return (
@@ -180,6 +189,7 @@ function Procurements() {
                         </div>
 
                         <button type="submit" className="headings-button">Save Request</button>
+                        <button type="button" className="cancel-button" onClick={handleCancel}>Cancel</button>
                     </form>
                 </div>
             )}

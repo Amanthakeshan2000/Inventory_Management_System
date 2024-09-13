@@ -22,7 +22,19 @@
 }
 
 
-
+.cancel-button{
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #dbdadea9; 
+    padding: 5px 30px;
+    height: 38px;
+    border-radius: 6px;
+    margin: 16px 0;
+    font-family: 'Poppins';
+    border: none;
+    margin-left: 40px;
+}
 
 .form-item{
     padding: 15px;
