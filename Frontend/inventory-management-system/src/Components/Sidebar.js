@@ -75,15 +75,15 @@ const Sidebar = () => {
           </div>
           <div className="menuItem" onClick={() => navigate('')}>
             <BsBoxFill className="icon" />
-            <span>Item</span>
+            <span>Items</span>
           </div>
           <div className="menuItem" onClick={() => navigate('/Procurements')}>
             < FaFileInvoiceDollar  className="icon"  />
-            <span>Procuremnets</span>
+            <span>Procurements</span>
           </div>
           <div className="menuItem" onClick={() => navigate('/add-supplier')}>
             <FaShop  className="icon" />
-            <span>Supplier</span>
+            <span>Suppliers</span>
           </div>
         </div>
       </div>

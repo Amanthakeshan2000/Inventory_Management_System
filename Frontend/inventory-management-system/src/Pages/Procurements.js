@@ -15,7 +15,7 @@ function Procurements() {
 
     const navigate = useNavigate();
 
-    // Initialize form visibility as true to display it by default
+ 
     const [showForm, setShowForm] = useState(true);
 
     const handleChange = (e) => {
@@ -34,7 +34,7 @@ function Procurements() {
             itemName: e.target.itemName.value,
             quantity: parseInt(e.target.quantity.value, 10),
             requestedBy: parseInt(e.target.requestedBy.value, 10),
-            requestDate: new Date().toISOString(), // or format as needed
+            requestDate: new Date().toISOString(), 
             requiredByDate: `${e.target.requiredByDate.value}T${e.target.requiredTime.value}:00`,
             priority: e.target.priority.value,
             status: 'PENDING',
@@ -61,7 +61,6 @@ function Procurements() {
             const result = await response.json();
             console.log('Form submitted successfully:', result);
 
-            // Redirect to the view page after successful submission
             navigate('/View-Procurements'); 
 
         } catch (error) {
@@ -88,10 +87,9 @@ function Procurements() {
                 </p>
             </div>
 
-            {/* Upper section with buttons */}
             <UpperSectionProcurements activePage="add-procurement" />
 
-            {/* Conditionally render the form */}
+           
             {showForm && (
                 <div className="procurement-form-container">
                     <form onSubmit={handleSubmit}>

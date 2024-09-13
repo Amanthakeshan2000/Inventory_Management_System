@@ -44,7 +44,7 @@ function ViewProcurements() {
                     throw new Error(`HTTP error! Status: ${response.status}`);
                 }
 
-                // Update UI by filtering out the deleted procurement
+   
                 setProcurements(procurements.filter(procurement => procurement.id !== id));
             } catch (error) {
                 console.error('Failed to delete procurement:', error);

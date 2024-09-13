@@ -75,7 +75,7 @@ function EditProcurement() {
             requiredByDate: formattedRequiredByDate,
             requestDate: formattedRequestDate,
             priority,
-            status: 'PENDING', // Example status; set appropriate value
+            status: 'PENDING', 
         };
     
         try {
@@ -102,7 +102,7 @@ function EditProcurement() {
     };
     
     const handleCancel = () => {
-        navigate('/View-Procurements'); // Navigate back to the suppliers list or any other route you prefer
+        navigate('/View-Procurements'); 
     };
     if (!procurement) {
         return <div>Loading...</div>;

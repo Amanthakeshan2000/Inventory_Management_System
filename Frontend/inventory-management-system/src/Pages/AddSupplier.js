@@ -18,7 +18,7 @@ function AddSupplier() {
     };
 
     const [formData, setFormData] = useState(initialFormData);
-    const navigate = useNavigate(); // Use navigate for programmatic navigation
+    const navigate = useNavigate(); 
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -46,11 +46,11 @@ function AddSupplier() {
 
             const data = await response.json();
             console.log('Supplier Added', data);
-            // Optionally redirect or show a success message here
-            navigate('/view-suppliers'); // Redirect to the suppliers list or another page
+           
+            navigate('/view-suppliers'); 
         } catch (error) {
             console.error('There was an error adding the supplier!', error);
-            // Handle error accordingly (e.g., show an error message)
+            
         }
     };
     const handleClear = () => {
@@ -69,7 +69,6 @@ function AddSupplier() {
                 {/* Upper section with buttons */}
                 <UpperSection activePage="add-supplier" />
 
-                {/* Form to add supplier */}
                 <div className="procurement-form-container">
                     <form onSubmit={handleSubmit}>
                         {/* Supplier Information */}
