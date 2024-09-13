@@ -43,4 +43,10 @@ public class SuplierController {
         suplierService.deleteSuplier(id);  // Call service to delete supplier.
         return "Suplier deleted successfully."; // Return success message.
     }
+
+    // New endpoint to get suppliers by status
+    @GetMapping("/getSupliersByStatus/{status}")
+    public List<SuplierDTO> getSupliersByStatus(@PathVariable String status) {
+        return suplierService.getSuppliersByStatus(status);
+    }
 }

@@ -69,4 +69,13 @@ public class SuplierServiceImpl implements SuplierService {
 //        }
     }
 
+
+    // Implementation of the new method to get suppliers by status
+    @Override
+    public List<SuplierDTO> getSuppliersByStatus(String status) {
+        return suplierRepository.findByStatus(status).stream()
+                .map(suplier -> modelMapper.map(suplier, SuplierDTO.class))
+                .collect(Collectors.toList());
+    }
+
 }

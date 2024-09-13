@@ -23,4 +23,7 @@ public interface SuplierService {
     // Method to delete a supplier by their ID.
     void deleteSuplier(Long id);
 
+    // New method to get suppliers by status
+    List<SuplierDTO> getSuppliersByStatus(String status);
+
 }
